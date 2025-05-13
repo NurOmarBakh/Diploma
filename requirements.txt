@@ -1,0 +1,11 @@
+fastapi==0.115.2
+uvicorn==0.34.0
+aiogram==3.19.0
+requests==2.32.3
+numpy==1.26.4
+faiss-cpu==1.10.0
+sentence-transformers==3.2.1
+torch==2.4.1
+transformers==4.50.3
+scikit-learn==1.6.0
+scipy==1.13.1
