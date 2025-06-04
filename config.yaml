@@ -1,0 +1,53 @@
+data:
+  raw_html_dir:     data/raw_html
+  raw_json_dir:     data/raw_json
+  chunks_dir:       data/chunks
+  embeddings_dir:   data/embeddings
+  faiss_index_dir:  data/faiss_index
+
+index:
+  factory_string: "Flat"        # на Windows безопаснее Flat
+
+ingest:
+  max_fetch_workers: 5
+  request_timeout:   15
+  chunk_size:        500
+  chunk_overlap:     50
+
+embed:
+  model_name:    "sentence-transformers/all-MiniLM-L6-v2"
+  batch_size:     32
+
+retrieve:
+  top_k:                 15
+  rerank_k:               5
+  cross_encoder_model:  null
+
+
+urls:
+- "https://admission.astanait.edu.kz/"
+- "https://admission.astanait.edu.kz/aet"
+
+- "https://astanait.edu.kz/programs/"
+- "https://astanait.edu.kz/computer-science/"
+- "https://astanait.edu.kz/software-engineering/"
+- "https://astanait.edu.kz/big-data-analysis/"
+- "https://astanait.edu.kz/media-technologies/"
+- "https://astanait.edu.kz/mathematical-computational-science-3/"
+- "https://astanait.edu.kz/big-data-in-healthcare/"
+- "https://astanait.edu.kz/cybersecurity/"
+- "https://astanait.edu.kz/smart-technologies/"
+- "https://astanait.edu.kz/industrial-internet-of-things/"
+- "https://astanait.edu.kz/electronic-engineering/"
+- "https://astanait.edu.kz/it-management/"
+- "https://astanait.edu.kz/ai-business/"
+- "https://astanait.edu.kz/it-entrepreneurship/"
+- "https://astanait.edu.kz/digital-journalism/"
+
+- "https://admission.astanait.edu.kz/magistratura"
+- "https://astanait.edu.kz/doktorantura/"
+
+- "https://astanait.edu.kz/university-life/student-housing/"
+- "https://astanait.edu.kz/university-life/student-council/"
+- "https://astanait.edu.kz/foundation-aitu/"
+- "https://astanait.edu.kz/about/"
