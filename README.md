@@ -22,12 +22,11 @@ telegram\_assistant/
 └── telegram\_bot.py    # aiogram-бот с прогревом модели и командой /setmodel
 ```
 
-````
-
 ## ⚙️ Установка
 
 1. **Клонировать репозиторий**
-   ```bash
+
+```bash
    git clone <URL-к-репозиторию>
    cd telegram_assistant
 ````
